@@ -1,0 +1,24 @@
+#include <stdio.h>
+/*
+  obter notas
+  calcular media
+  verifica se aluno foi reprovado ou não
+*/
+int main(void) {
+  float nota1, nota2, media;
+
+  
+  printf("digitar a primeira nota: ");
+  scanf("%f", &nota1);
+
+  printf("digitar a segunda nota: ");
+  scanf("%f", &nota2);
+
+  media = (nota1 + nota2)/2;
+
+  if(media >= 7)
+    printf("aprovado");
+  else 
+    printf("reprovado");
+  
+  return 0;
